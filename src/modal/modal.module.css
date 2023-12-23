@@ -1,0 +1,104 @@
+.box {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 0.2s ease-out 0s 1 onAppeare;
+}
+
+.heading {
+  display: flex;
+}
+
+.bg {
+  background: rgba(47, 47, 47, 0.75);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+  position: absolute;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  animation: 0.2s ease-out 0s 1 onOpen;
+}
+
+.input {
+  display: flex;
+}
+
+.inputbox {
+  display: flex;
+  flex-grow: 1;
+}
+
+.inputbox input {
+  border: 2px solid #ccc;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.modal h2 {
+  margin: 0.5rem;
+}
+
+.modal div {
+  margin: 0.5rem 0;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+}
+
+.create {
+  display: flex;
+  justify-content: end;
+}
+
+.create button {
+  background: #001f8b;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  transition: all 1s ease-in-out;
+}
+
+.create button:active {
+  opacity: 0.7;
+}
+
+@keyframes onAppeare {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes onOpen {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .input,
+  .colors,
+  .heading {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,110 @@
+.box {
+  flex-grow: 1;
+  background-color: #dae5f5;
+  display: flex;
+  flex-direction: column;
+  animation: 0.2s ease-out 0s 1 onAppeare;
+}
+
+.head {
+  background-color: #001f8b;
+  display: flex;
+  align-items: center;
+}
+
+.head button {
+  color: white;
+  font-size: 2rem;
+  margin-left: 1rem;
+  display: none;
+}
+
+.chats {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.chats::-webkit-scrollbar {
+  background-color: #d9d9d9;
+  width: 0.75rem;
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  width: 0.5rem;
+  border: 2px solid #d9d9d9;
+}
+
+.input {
+  min-height: 20vh;
+  background-color: #001f8b;
+  display: flex;
+  padding: 1rem;
+  position: relative;
+}
+
+.input textarea {
+  flex-grow: 1;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.input textarea::-webkit-scrollbar {
+  background-color: #d9d9d9;
+  width: 0.75rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.input textarea::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 2px solid #d9d9d9;
+}
+
+.input button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+}
+
+.head p {
+  color: white;
+}
+
+.icon {
+  margin: 1rem;
+}
+
+.name{
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 780px) {
+  .box {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+  .head button {
+    display: flex;
+  }
+}
+
+@keyframes onAppeare {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,27 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+.body{
+  display: flex;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}

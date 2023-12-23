@@ -1,0 +1,33 @@
+.box {
+  flex-grow: 1;
+  background-color: #dae5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image h1, .image p{
+  margin: 0;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 1rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .box {
+    display: none;
+  }
+}
